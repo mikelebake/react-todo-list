@@ -1,33 +1,15 @@
-import React, { Component } from 'react'
-import Table from './Table'
+// src/App.js
+import React from 'react';
+import './App.css';
+import TodoList from './TodoList'; // Importez le composant TodoList
 
-class App extends Component {
-  render() {
-    const characters = [
-      {
-        name: 'Charlie',
-        job: 'Janitor',
-      },
-      {
-        name: 'Mac',
-        job: 'Bouncer',
-      },
-      {
-        name: 'Dee',
-        job: 'Aspring actress',
-      },
-      {
-        name: 'Dennis',
-        job: 'Bartender',
-      },
-    ]
-
-    return (
-      <div className="container">
-        <Table characterData={characters} />
-      </div>
-    )
-  }
+function App() {
+  return (
+    <div className="App">
+      <h1>Ma Liste de Tâches</h1>
+      <TodoList /> {/* Utilisez le composant TodoList */}
+    </div>
+  );
 }
 
-export default App
+export default App;

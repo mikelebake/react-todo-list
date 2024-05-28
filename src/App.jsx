@@ -6,7 +6,7 @@ import TodoList from './TodoList'; // Importez le composant TodoList
 function App() {
   return (
     <div className="App">
-      <h1>Ma Liste de Tâches</h1>
+      <h1>Liste de Tâches</h1>
       <TodoList /> {/* Utilisez le composant TodoList */}
     </div>
   );
